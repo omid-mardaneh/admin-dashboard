@@ -6,7 +6,7 @@ export default function Card({ name, number, className }) {
         <span>{name}</span>
       </div>
       <div>
-        <span className={`las la-${className}`}></span>
+        <span className={`las la-${className}`} />
       </div>
     </div>
   );

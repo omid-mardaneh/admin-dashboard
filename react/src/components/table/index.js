@@ -15,7 +15,7 @@ export default function Table({ header = [], items = [] }) {
               <td>{position}</td>
               <td>{type}</td>
               <td>
-                <span className={`status ${color}`}></span>
+                <span className={`status ${color}`} />
                 {status}
               </td>
             </tr>

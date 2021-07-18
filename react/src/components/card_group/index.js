@@ -6,7 +6,7 @@ export default function CardGroup({ name, children, className }) {
           <h3>{name}</h3>
           <button>
             See all
-            <span className="las la-arrow-right"></span>
+            <span className="las la-arrow-right" />
           </button>
         </div>
         <div className="card-body">{children}</div>

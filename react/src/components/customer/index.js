@@ -8,9 +8,9 @@ export default function Customer({ name, type }) {
           <small>{type}</small>
         </div>
         <div className="contact">
-          <span className="las la-user-circle"></span>
-          <span className="las la-comment"></span>
-          <span className="las la-phone"></span>
+          <span className="las la-user-circle" />
+          <span className="las la-comment" />
+          <span className="las la-phone" />
         </div>
       </div>
     </div>

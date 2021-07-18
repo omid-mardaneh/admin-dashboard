@@ -18,7 +18,7 @@ export default function SideBar({ isActive }) {
     <div className={`sidebar ${isActive ? "active" : ""}`}>
       <div className="sidebar-brand">
         <h2>
-          <span className="las la-igloo"></span>
+          <span className="las la-igloo" />
           <span>Accusoft</span>
         </h2>
       </div>
