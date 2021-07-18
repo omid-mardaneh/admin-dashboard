@@ -1,7 +1,8 @@
+import { useState } from "react";
 import Item from "./item";
 
 const items = [
-  { name: "Dashboard", className: "igloo", active: true },
+  { name: "Dashboard", className: "igloo" },
   { name: "Customers", className: "users" },
   { name: "Porojects", className: "clipboard-list" },
   { name: "Orders", className: "shipping-bag" },
@@ -11,6 +12,8 @@ const items = [
 ];
 
 export default function SideBar({ isActive }) {
+  const [activeItem, setActiveItem] = useState("Dashboard");
+
   return (
     <div className={`sidebar ${isActive ? "active" : ""}`}>
       <div className="sidebar-brand">
@@ -23,7 +26,12 @@ export default function SideBar({ isActive }) {
       <div className="sidebar-menu">
         <ul>
           {items.map((item, index) => (
-            <Item key={index} {...item} />
+            <Item
+              key={index}
+              {...item}
+              onClick={() => setActiveItem(item.name)}
+              active={item.name === activeItem}
+            />
           ))}
         </ul>
       </div>
